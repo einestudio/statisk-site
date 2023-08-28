@@ -1,3 +1,7 @@
+* {
+  background-color: #2f52e0;
+}
+
 html {
   scroll-behavior: smooth;
   font-size: calc(18px + ((100vw - 600px) / 250));
@@ -42,8 +46,63 @@ h6 {
   font-weight: bold;
 }
 
-.discount {
-  background-color: red;
+h1 {
+  font-size: 3.052rem;
+  letter-spacing: -0.1rem;
+  line-height: 1;
+  color: #bced09;
+}
+
+h2 {
+  font-size: 2.441rem;
+  letter-spacing: -0.12rem;
+  line-height: 1.2;
+  color: #bced09;
+}
+
+h3 {
+  font-size: 1.953rem;
+  letter-spacing: -0.02rem;
+  line-height: 1.2;
+  color: #bced09;
+}
+
+h4 {
+  font-size: 1.563rem;
+  letter-spacing: -0.06rem;
+  line-height: 1.3;
+}
+
+h5 {
+  font-size: 1.25rem;
+  letter-spacing: -0.03rem;
+  line-height: 1.4;
+}
+
+h6 {
+  font-size: 1rem;
+  letter-spacing: 0;
+  line-height: 1.5;
+}
+
+p {
+  margin-bottom: 1.563rem;
+  color: #bced09;
+}
+
+p > *:last-child {
+  margin-bottom: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: var(--text-decoration-color);
+  -webkit-text-decoration-color: var(--text-decoration-color);
+  border-radius: 5px;
+  text-underline-offset: 2px;
+  text-decoration-thickness: 2px;
+  color: #ff715b;
 }
 
 body {
@@ -63,4 +122,9 @@ body {
     align-items: center;
     justify-content: space-between;
   }
+}
+
+/*productlist*/
+
+
 }

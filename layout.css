@@ -1,5 +1,57 @@
-.gridcontainer1 {
+.productlist main {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 290px));
-  gap: 2rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1%;
+}
+.productlist main h2 {
+  grid-column: 1/-1;
+}
+.productlist article h3 {
+  font-size: 1rem;
+  flex-grow: 3;
+}
+.productlist article > * {
+  margin: 0;
+  font-size: 0.9rem;
+}
+.sub_cat {
+  color: var(--text-decoration-color);
+}
+.productlist article {
+  display: flex;
+  flex-direction: column;
+}
+.productlist article.soldOut img {
+  opacity: 0.5;
+}
+.productlist article.soldOut::before {
+  content: "Sold Out";
+  position: absolute;
+  background: var(--color);
+  color: var(--background-color);
+  padding: 1rem;
+}
+.productlist article .discount,
+.productlist article .price span {
+  display: none;
+}
+.productlist article.sale .discount {
+  display: flex;
+  justify-content: space-between;
+}
+.discount > p {
+  margin-bottom: 0;
+}
+.productlist article.sale .price span {
+  display: initial;
+}
+.productlist article button {
+  margin-top: auto;
+}
+.productlist article {
+  margin-bottom: 1rem;
+}
+.discount p:last-child {
+  background: #ff715b;
+  padding: 0.2rem;
 }
